@@ -7,7 +7,7 @@ const main = async () => {
   const votingTx = await VOTINGPOLL.vote(3);
   await votingTx.wait();
 
-  const getVotes = await VOTINGPOLL.getVotes(3);
+  const getVotes = await VOTINGPOLL.getVotes(2);
   console.log(getVotes);
 };
 main().catch((error) => {
